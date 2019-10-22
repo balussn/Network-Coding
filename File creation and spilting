@@ -1,0 +1,11 @@
+1. Creating a 1MB dummy file
+
+cyber% dd if=/dev/zero of=test.txt bs=1 count=1MB  
+1000000+0 records in
+1000000+0 records out
+1000000 bytes (1.0 MB, 977 KiB) copied, 4.47156 s, 224 kB/s
+
+
+2. Spilting the file into chunks.
+
+split -b 50K text.txt
