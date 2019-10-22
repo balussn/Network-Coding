@@ -1,0 +1,282 @@
+cyber% openssl
+OpenSSL> help
+Standard commands
+asn1parse         ca                ciphers           cms               
+crl               crl2pkcs7         dgst              dhparam           
+dsa               dsaparam          ec                ecparam           
+enc               engine            errstr            gendsa            
+genpkey           genrsa            help              list              
+nseq              ocsp              passwd            pkcs12            
+pkcs7             pkcs8             pkey              pkeyparam         
+pkeyutl           prime             rand              rehash            
+req               rsa               rsautl            s_client          
+s_server          s_time            sess_id           smime             
+speed             spkac             srp               storeutl          
+ts                verify            version           x509              
+
+Message Digest commands (see the `dgst' command for more details)
+blake2b512        blake2s256        gost              md4               
+md5               rmd160            sha1              sha224            
+sha256            sha3-224          sha3-256          sha3-384          
+sha3-512          sha384            sha512            sha512-224        
+sha512-256        shake128          shake256          sm3               
+
+Cipher commands (see the `enc' command for more details)
+aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb       
+aes-256-cbc       aes-256-ecb       aria-128-cbc      aria-128-cfb      
+aria-128-cfb1     aria-128-cfb8     aria-128-ctr      aria-128-ecb      
+aria-128-ofb      aria-192-cbc      aria-192-cfb      aria-192-cfb1     
+aria-192-cfb8     aria-192-ctr      aria-192-ecb      aria-192-ofb      
+aria-256-cbc      aria-256-cfb      aria-256-cfb1     aria-256-cfb8     
+aria-256-ctr      aria-256-ecb      aria-256-ofb      base64            
+bf                bf-cbc            bf-cfb            bf-ecb            
+bf-ofb            camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  
+camellia-192-ecb  camellia-256-cbc  camellia-256-ecb  cast              
+cast-cbc          cast5-cbc         cast5-cfb         cast5-ecb         
+cast5-ofb         des               des-cbc           des-cfb           
+des-ecb           des-ede           des-ede-cbc       des-ede-cfb       
+des-ede-ofb       des-ede3          des-ede3-cbc      des-ede3-cfb      
+des-ede3-ofb      des-ofb           des3              desx              
+rc2               rc2-40-cbc        rc2-64-cbc        rc2-cbc           
+rc2-cfb           rc2-ecb           rc2-ofb           rc4               
+rc4-40            seed              seed-cbc          seed-cfb          
+seed-ecb          seed-ofb          sm4-cbc           sm4-cfb           
+sm4-ctr           sm4-ecb           sm4-ofb           
+
+OpenSSL> cyber% openssl
+OpenSSL> help
+Standard commands
+asn1parse         ca                ciphers           cms               
+crl               crl2pkcs7         dgst              dhparam           
+dsa               dsaparam          ec                ecparam           
+enc               engine            errstr            gendsa            
+genpkey           genrsa            help              list              
+nseq              ocsp              passwd            pkcs12            
+pkcs7             pkcs8             pkey              pkeyparam         
+pkeyutl           prime             rand              rehash            
+req               rsa               rsautl            s_client          
+s_server          s_time            sess_id           smime             
+speed             spkac             srp               storeutl          
+ts                verify            version           x509              
+
+Message Digest commands (see the `dgst' command for more details)
+blake2b512        blake2s256        gost              md4               
+md5               rmd160            sha1              sha224            
+sha256            sha3-224          sha3-256          sha3-384          
+sha3-512          sha384            sha512            sha512-224        
+sha512-256        shake128          shake256          sm3               
+
+Cipher commands (see the `enc' command for more details)
+aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb       
+aes-256-cbc       aes-256-ecb       aria-128-cbc      aria-128-cfb      
+aria-128-cfb1     aria-128-cfb8     aria-128-ctr      aria-128-ecb      
+aria-128-ofb      aria-192-cbc      aria-192-cfb      aria-192-cfb1     
+aria-192-cfb8     aria-192-ctr      aria-192-ecb      aria-192-ofb      
+aria-256-cbc      aria-256-cfb      aria-256-cfb1     aria-256-cfb8     
+aria-256-ctr      aria-256-ecb      aria-256-ofb      base64            
+bf                bf-cbc            bf-cfb            bf-ecb            
+bf-ofb            camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  
+camellia-192-ecb  camellia-256-cbc  camellia-256-ecb  cast              
+cast-cbc          cast5-cbc         cast5-cfb         cast5-ecb         
+cast5-ofb         des               des-cbc           des-cfb           
+des-ecb           des-ede           des-ede-cbc       des-ede-cfb       
+des-ede-ofb       des-ede3          des-ede3-cbc      des-ede3-cfb      
+des-ede3-ofb      des-ofb           des3              desx              
+rc2               rc2-40-cbc        rc2-64-cbc        rc2-cbc           
+rc2-cfb           rc2-ecb           rc2-ofb           rc4               
+rc4-40            seed              seed-cbc          seed-cfb          
+seed-ecb          seed-ofb          sm4-cbc           sm4-cfb           
+sm4-ctr           sm4-ecb           sm4-ofb           
+
+OpenSSL> 
+
+2. Generate the (Public key, Private key) pair
+command: genrsa
+
+OpenSSL> genrsa
+Generating RSA private key, 2048 bit long modulus (2 primes)
+............................................................................+++++
+...........................................+++++
+e is 65537 (0x010001)
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAxE4pGOkKpI46mndsGqfMNIOW7qK4sN06Ucj2DG9X98dpGgMz
+wciefaUpGMXTVA9VAuk58clcxkMqLRMGxM+NYFFwwaU4A4BAPLi9TCq2hA4TTHOz
+8434VUPNCxznHZcVF2bF871Mlefy6rZN/Nv/5aZby2GxqTUA2XecSMRvagCpoayz
+2O4dlOJz2JC7+hepoIf5VIwv9URfjX40xQ7OHjO1fRaiKQm74HS5buG6Km1ujNBN
+F/yYi0mm+e7YOUYdN3sct7bPkUbT2FwegmKSoQOLQEOjqo7iW3yqqgxArzxagyC5
+kup6pmXpW07AEGQuk/dXSD37sBof+BhAYw7vFwIDAQABAoIBADML6B/0KbJU0eRs
+/Y2I6M8XEN6JLeHABXRS/7iIE6X5EtmSz5iqpJwjoKYyexu2yPJy14CKTje4K3WB
+JxdyqV7MjresUP6IESw5FfCCguegCWCuDbNdzZ/Oe7lSEL9fFDr7nKofJZUttbtX
+ILyKMOb09ZXTl7FaeRgTxG4ftqEniaIGTHsQ8BaD4frRpRbIWjClqUM+IemGxVny
+aAuNeO9DA5qcaxYKODQd+CZ7KmzNch0/OMEK2uMWTiwWVMsQBB46QLBmIrdgdn7c
+IhjwaUNNr2AzSBOHVyDQ1P9lqKm73pRM+kMCreURg7Spw6iD8V9O2Nz326sUH5L8
+G4Js1mECgYEA+sxFtQm2Ky1NvL2ZDMbdgk3Dmy1l4wzP3EsE7qIx0ln0p+KY0Wzh
+bWPbPFJlRHxmgN1avfvbMw51TpYvPpCKFJy4YHO9wqVgrXNFMWcGYKWDymnYJBak
+vhJjoHbFymghunEVjadcpkbw+RDz2Bg8tBg9DIHT+0e/pA9soeJApT8CgYEAyGCI
+0RAXTWoTMMz6/ZO0ec66fB9oUYoy2sugJniVl80UcEWO8dYBViw7FpiqePwsBLAw
+sxFheujRUm9l0TfweMDCkkj6S6jTC1X/kW2kNM+PsjVJg9yg4tGOPfYv5gSzNgtw
+1H5zxLGqGpbDc9E5U3AoXl27YTGG/6Hz9M9ViCkCgYEA+ahVD9WeETck9miqrYxd
+PvRYbuXvUekUFhBb1Y2CGQrRQDqSs482jKVlvZOsGVPY2hj/1rWbTCTtY5CfcSGD
+QueLpwAwe04TgjaIP5h2Qckh+2IH9kzQLCG0KS1y0X19bdJaiUt8ME3YXaehhZED
+BKhIRWYL9k1DGXb9Rd0rSxMCgYBY7rdqioi9HCo+S4vOReMg+Ma91ja3ke22PA/t
+YzGJuUSr+8NQxFm9hE4JXmKy5cEnp4dFwp4QLgrRWo3HCNvazDrPMEKel+RrMJUI
+V7A8nC67unjRZHenk7hc+coSfd2ITBWcyi7ZirzjpixDWAXoaWwRTeqfXZr8FEYx
+TmA42QKBgBw17CQ2dflH5q6zLL32NGFyrrtkZlA4r0pDjEKwQiWXersyeL5/AO51
+wvA6KDhYnE24BCFTJPLP8knIiw9owHOSfWuSka3EvZHPJuius+x0xAuTHFRTOiQu
+s3iR+BxAShthDP96+yx2ISvDnp2tof1OiFjyp0epv1BBG2t1lyJY
+-----END RSA PRIVATE KEY-----
+OpenSSL> ^C
+cyber% 
+cyber% 
+
+3. Output the key to a file key.pem 
+OpenSSL> genrsa -out key.pem 2048         
+Generating RSA private key, 2048 bit long modulus (2 primes)
+...........+++++
+...................................................................+++++
+e is 65537 (0x010001)
+
+4. Display the file in key.pem
+
+cyber% cat key.pem
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA1lFRqrltLFj+yRGBXDuu3eGrD/fZ/QyoyCvZUA4u8QraV4M/
+K23wLTvZLMbiGORD0ecPIMs0gILe6GTZPJHySSC2cDa5ki5JxBwFHO3V693jVe5T
+47GUGyGf3OX9wnuM6m4C7f4C60/FoF/EgRH5Yq6JXH3jIIG3kVnjm8tLmALpxNbq
+zsK2+dF0kPESopC6OyZRJ+QRcbudMusNaAHRVmSi6Rd4c05OvbgAf6iUgfgmJAD2
+MQwLEplgI8a5S7fWmwqB8W+x1FQzXG1FD+GSMKjnFxk+ZQ4/3+iI8998QcArTbsB
+DM/cenRiiP7skBlN5AX0n/AZ8ugokK2rz/ohyQIDAQABAoIBAQCr6csSoW77dd/a
+tdoIfC+G+DBZvLz1iSQSfWnyF4579/Kw5CzVz3grMKjCjD5tLR1h0HCII7hXpaLc
+05iWR5QMKNtvI9azdcHiN3+6duV0MCbdlTFhod5l7RDpBuwJB0Y//kMHWQxKaVDj
+li5wQlTDXbH9qVV5i9QOGgbDv81BfwvTwPVEPORf74zfGh+6JblfeLuH2Nqu9zEz
+I7gjNizf6DYuD3n64pOfio/5StCgQ7k4cWy9C7j5uF/HWtdFXjh6wowbLqy2lyBc
+s2oVUtGwAMzxcDuVPELxVdtRu9DhhXSJh4eGWRybZ1KYD2CN5Xtq0zF9I3xZ+ioA
+g+brM/ZpAoGBAPz9szkhIMahbqQUvXGgsMzSe5LdbP89/PCyy7T33twGFX84nrfk
+mglcGGnQ+JXR+IvpXMVrz1Cb9b1+yI4ZEduw790SbBvcsBjgfJdQUZoJQ9Ho/HXV
+RtNeRMhXpufKp/AEE8cV0AOtBCrc78E3zm0cSz82qB7RGaa673BaHqjjAoGBANjd
+3grsm1KkFLhRjErXcV474nybBwvGZrdvqwqHMCyYF8o9zT3Bbxlvxhm8g3n7pIMs
+0+hlDHg1g9kvuj4/QOzHH/oclSk7B1ffVO6l5Qm9PijVQ5ILCCQqBSmh00wG3bAT
+5rPiGHai+ZT4AdfD0zGnlhtBJm5mgX90iN906IZjAoGBAMBnadB/A2BNEco0A8fQ
+/+UmBtkxEV4lFKMyN36QLKuE7QBuXTdZ4lRP+Dkxtnyqza4KcoWqcmbJ1eCh9YEs
+S8qbDDFDe3jNJBgnUln5ubW+ahfQa4BqDY1e2kzLbKJIG+SMFUaJrkO9Z7f5g1Wd
+TZ7pr8iJlt6pBCsrbEI0J7ElAoGACv788jrbCU6uikYAQg84fVm1+zF1IwC1Vpm/
+53HBXJF9q1CE5pu3QWfseIOZewbqaYhNWlw9TJ8SB2InJF7asObL1Ue7vHJ0xdza
+FpusyFijHTjrCy2qBQNobZr59sHmXbY0nWxaZzGOTCJjHYidXcgskUc1ZqWl7UuA
+YSwxWhcCgYA/RReirLhHh3b5feCGJy/nDq0ENKaPJhuvh8cUX2he+thoS4dymSRW
+y0WnaLZw9H67PmuXTTKQJ5v0zxsaampPFX3WIB93WA9uulCZql6FIdzcWKJzqUuS
+Yvlwat3pjms4Tupl9oPrSOlPGu+DHIfRts6O876W7ROLfI8i+OMACA==
+-----END RSA PRIVATE KEY-----
+cyber% 
+cyber% 
+
+5. DES Encryption
+
+
+openssl enc -des -e -in file.txt -out file.txt.enc
+
+openssl	- OpenSSL command line tool
+enc	    - Encoding with Ciphers
+des     - DES
+enc		- Encryption
+-in 	- Input file
+-out	- output encrypted file.
+
+
+openssl enc -des -d -in file.txt.enc -out file1.txt 
+
+AES Encryption
+openssl enc -aes128 -e -in file.txt -out file.txt.aes.enc
+
+openssl enc -aes128 -d -in file.txt.aes.enc -out file2.txt
+
+6. RSA
+
+openssl genrsa
+
+openssl genrsa -out key.pem 2048
+
+openssl rsa -in key.pem -inform pem -text
+
+generate public key
+
+openssl rsa -in key.pem -inform pem -pubout >key.pub
+
+openssl rsa -inform PEM -in key.pem -outform DER -out key.der
+
+openssl rsautl -encrypt -inkey key.pub -pubin -in file.txt -out file.txt.rsa.enc
+
+openssl rsautl -decrypt -inkey key.pem -in file.txt.rsa.enc -out file3.txt       
+
+
+7. Elliptic curve:
+
+openssl ecparam -name prime256v1 -genkey -noout -out eckey.pem
+
+cyber% gedit eckey.pem 
+
+openssl ec -inform pem -in eckey.pem -pubout>eckey.pub
+
+
+8. Diffie-Hellmann Key Exchange(ECDH)
+
+openssl ecparam -name -prime256v1 -genkey -noout -out alice_privkey.pem
+unknown curve name (-prime256v1)
+cyber% openssl ecparam -name prime256v1 -genkey -noout -out alice_privkey.pem 
+cyber% openssl ec -inform pem alice_privkey.pem -pubout >alice_pubkey.pem
+ec: Use -help for summary.
+cyber% openssl ec -inform pem -in alice_privkey.pem -pubout >alice_pubkey.pem
+read EC key
+writing EC key
+cyber% gedit alice_pubkey.pem 
+cyber% gedit alice_prikey.pem
+cyber% gedit alice_privkey.pem
+
+openssl ecparam -name prime256v1 -genkey -noout -out bob_privkey.pem
+cyber% openssl ec -inform pem -in bob_privkey.pem -pubout >bob_pubkey.pem
+read EC key
+writing EC key
+cyber% openssl pkeyutl -derive -inkey alice_privkey.pem -peerkey bob_pubkey.pem -out alice_shared_secret.bin
+cyber% base64 alice_shared_secret.bin 
+S8KzKqCNTm7ML0fidCOYSxg/FStXXLGYhop0FMp+sxI=
+cyber% openssl pkeyutl -derive -inkey bob_privkey.pem -peerkey alice_pubkey.pem -out bob_shared_secret.bin
+cyber% base64 bob_shared_secret.bin 
+S8KzKqCNTm7ML0fidCOYSxg/FStXXLGYhop0FMp+sxI=
+
+
+9. Sign & Verify using keys
+
+cat file.txt
+this is ssnce
+cyber% openssl dgst -sha256 file.txt
+SHA256(file.txt)= 2e8a59a412852eeb0f4e581d6f52eb9d893ad9137aea5fd70444a45f65ce07fb
+cyber% openssl dgst -sha256 -sign key.pem file.txt
+�,~�NR<I-~l��z���]oG<y!ߟ�Wz9Uܕ�Y�]��rD��d�N��l������$
+                                                     �1{]�4F��B������*
+                                                                      �N�.i
+                                                                           F
+O��Z�cKx!�rH��V�KUK���Ɣjp�{��ݰ0P���i���b	���jp�%��d��DYL�8�ĝ1�?�d�^��k��0\� 3�9=�o*H���;h�oM��%�@���4�>6��_�z(ؙ_
+����,q����+�C͇�P%                                                                cyber% openssl dgst -sha256 -sign key.pem -out file.txt.sha256.sign file.txt
+cyber% base64 file.txt.sha256.sign 
+mix+xU5SPEktfmzG53qEjfZdb0c8eSHfn/FXFno5VdyV9VnkXaXEFXJEzhK8ZMJOpsxs4Pis3xGl
+myQL3DF7HF2UETRGGppC9qq7kRjq3ioMl07igy5pDEYDDQpPyfxa0mNLeCH5ckjgilamS1UQSwTs
+4fUBf8aUanC3e9TT3bAwUL2DxGnG2t9iCdobm77PanDoJfwaZIPARFlMpTgR08SdMZ4bqz+lZJte
+f8IHi2vM6TBclBMgM9A5Pf5vKkjUBpHpO2gOp29N9e8lsUAWvv6ZCKs0nT42h8QVX+t6KNiZXxwM
+rw34gxWdzCxxnoIa1acInysYG7/KDhBDzYeUUA==
+
+penssl dgst -sha256 -verify key.pub -signature file.txt.sha256.sign file.txt
+Verified OK
+
+10. X509 certificates
+
+penssl genrsa -out certkey.key 2048
+Generating RSA private key, 2048 bit long modulus (2 primes)
+.....................+++++
+..................................+++++
+e is 65537 (0x010001)
+cyber% openssl rsa -pubout -out certpubkey.key -in certkey.key 
+
+openssl req -in cert.csr -noout -text
+
+openssl x509 -req -days 365 -in cert.csr -signkey certkey.key -out cert.crt
+openssl x509 -in cert.crt -text -noout
+
