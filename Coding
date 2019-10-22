@@ -1,0 +1,53 @@
+Abstract:
+To provide fault tolerance for cloud storage, recent studies propose to stripe data across multiple cloud vendors. 
+However, if a cloud suffers from a permanent failure and loses all its data, then we need to repair the lost data 
+from other surviving clouds to preserve data redundancy.
+
+It is a proof-of-concept prototype of a network-coding-based file system that aims at providing fault tolerance and 
+reducing data repair cost when storing files using multiple-cloud storage.
+
+Config File:
+[Coding]
+k=2
+n=4
+tmpdir=/tmp
+type=0
+w=8
+
+[Storage]
+path=store/node0
+type=0
+
+path=store/node1
+type=0
+
+path=node2
+type=1
+authurl=http://127.0.0.1:8080/auth/v1.0
+username=system:root
+password=testpass
+
+path=node3
+type=1
+authurl=http://127.0.0.1:8080/auth/v1.0
+username=system:root
+password=testpass
+
+path=store/node4
+type=0
+
+4. Steps: 
+
+$ tar xf nccloud-c++-1.0.tar.gz && cd nccloud-c++-1.0/nccloud
+$ make
+$ export LD_LIBRARY_PATH="../libfmsr/lib:../Jerasure/lib:$LD_LIBRARY_PATH"  # or install the libraries any way you want
+$ cp template/config_local config
+$ mkdir -p store/{tmp,node{0..4}}
+$ bin/nccloud config encode README template/config_local
+$ bin/nccloud config repair 0 README config_local
+$ bin/nccloud config decode README config_local
+$ diff {,store/tmp/}README
+$ diff {template,store/tmp}/config_local
+$ bin/list_repo config
+$ bin/nccloud config delete README config_local
+$ bin/list_repo config
